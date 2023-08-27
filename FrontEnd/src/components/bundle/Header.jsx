@@ -1,3 +1,4 @@
+import Main from "./Main";
 import Navbar from "./Navbar";
 
 const Header = () => {
@@ -15,7 +16,7 @@ const Header = () => {
     <>
       <Navbar />
       <header>
-        <div className="h-[40rem] w-full bg-cover bg-center" style={imgHeader}>
+        <div className="h-[35rem] w-full bg-cover bg-center" style={imgHeader}>
           <div className="flex flex-col items-center justify-center h-full ">
             {" "}
             <h1 className="text-fourth text-3xl tracking-wide font-semibold">FLOW</h1>
@@ -23,6 +24,7 @@ const Header = () => {
           </div>
         </div>
       </header>
+      <Main/>
     </>
   );
 };

@@ -1,3 +1,5 @@
+import React from 'react';
+import Fade from 'react-reveal/Fade';
 import HamburgerMenu from "./HamburgerMenu";
 
 const Navbar = () => {
@@ -15,9 +17,9 @@ const Navbar = () => {
               Sushi
             </span>
           </a>
-          {/* <Fade right> */}
+          <Fade right>
             <HamburgerMenu />
-          {/* </Fade> */}
+          </Fade>
           <div
             className="hidden w-full 2xl:block md:w-auto"
             id="navbar-default"

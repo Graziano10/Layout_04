@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import Fade from 'react-reveal/Fade';
 
 const HamburgerMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -51,9 +52,10 @@ const HamburgerMenu = () => {
               />
             </svg>
           </button>
+          <Fade duration={600} right>
           <nav
             id="hamburger-nav"
-            className={`absolute right-[-2.6rem] top-[-1.5rem] text-start p-2 w-[20rem] z-10
+            className={`absolute right-[-2.6rem] top-[-1.5rem] text-start p-2 w-[25rem] z-10
 
             ${menuOpen ? "" : "hidden"}`}
           >
@@ -196,6 +198,7 @@ const HamburgerMenu = () => {
               </div>
             </ul>
           </nav>
+          </Fade>
         </div>
       </div>
     </>
