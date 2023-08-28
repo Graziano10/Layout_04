@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Main02 from "./Main02";
+import Main03 from "./Main03";
 
 const Main = () => {
-
-
   return (
     <>
       <main>
-        <div className="bg-secondary h-[25rem] p-5 flex flex-col justify-center items-center gap-5 text-center text-fourth tracking-wide">
+        <div className="bg-secondary h-[25rem] p-5 flex flex-col justify-center items-center gap-5 text-center text-fourth tracking-wide x:h-[15rem]">
           <h1 className="font-bold text-3xl">Flow Sushi | NewYork</h1>
           <p className="font-semibold text-lg x:max-w-2xl">
             "A style that meets East and West. nothing is left to chance, a menu
@@ -42,10 +41,12 @@ const Main = () => {
             </div>
           </div>
 
-          <div className="h-full flex justify-center items-center">
-            <button className=" text-primary text-semibold w-72 h-10 m-8 x:mb-8 tracking-wide border-double border-4 border-primary">
-              GALLERY: OUR SPECIALTIES
-            </button>
+          <div className="x:hidden block">
+            <div className="h-full flex justify-center items-center">
+              <button className=" text-primary text-semibold w-72 h-10 m-8 x:mb-8 tracking-wide border-double border-4 border-primary">
+                GALLERY: OUR SPECIALTIES
+              </button>
+            </div>
           </div>
 
           {/* X */}
@@ -127,10 +128,12 @@ const Main = () => {
 
         {/* ----------------------------------- */}
 
-      <Main02/> 
+        <Main02 />
 
         {/* ----- */}
-        <div className="bg-secondary">04</div>
+        
+          <Main03 />
+
         <div className="bg-primary">05</div>
       </main>
     </>
