@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Main02 from "./Main02";
 import Main03 from "./Main03";
+import Main04 from "./Main04";
 
 const Main = () => {
   return (
@@ -126,7 +127,7 @@ const Main = () => {
           </div>
         </div>
 
-        {/* ----------------------------------- */}
+       {/* ----- */}
 
         <Main02 />
 
@@ -134,7 +135,11 @@ const Main = () => {
         
           <Main03 />
 
-        <div className="bg-primary">05</div>
+          {/* ----- */}
+
+          <Main04 />
+
+        
       </main>
     </>
   );
